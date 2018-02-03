@@ -19,6 +19,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -26,14 +27,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img class="header-img" src="img/mainimg.png" alt="Монитор">	
+					<img class="header-img wow fadeInLeftBig" src="img/mainimg.png" alt="Монитор">	
 				</div>
 				<!-- /.col-7 -->
 				<div class="col-lg-5">
-					<p class="header-pretitle">Веб-разработчик</p>
-					<h1 class="header-title">Сергей Курников</h1>
-					<p class="header-subtitle"> Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
-					<div class="header-button-block">
+					<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Сергей Курников</h1>
+					<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s"> Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 						<a class="header-button" href="https://vk.me/id50684213">Связаться</a>
 						<small>Это бесплатно</small>
 					</div>
@@ -49,7 +50,7 @@
 
 	<section class="portfolio">
 		<div class="container">
-				<div class="portfolio-block">
+				<div class="portfolio-block wow fadeInUpBig">
 					<h2 class="portfolio-title">Портфолио</h2>
 					<p class="portfolio-subtitle">Мои работы</p>
 					<div class="row">
@@ -91,10 +92,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p>Подпишитесь:</p>
-						<a href="https://www.facebook.com/profile.php?id=100004710247367"><img src="img/socials/facebook-logo-button.png" alt="Facebook"></a>
-						<a href="#"><img src="img/socials/telegram-symbol.png" alt="Telegramm"></a>
-						<a href="https://vk.com/id50684213"><img src="img/socials/vk-social-logotype.png" alt="Vkontakte"></a>
-						<a href="https://www.youtube.com/channel/UCDWgn_0EjQM-qmV8f85mV1g?view_as=subscriber"><img src="img/socials/youtube-symbol.png" alt="YouTube"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://www.facebook.com/profile.php?id=100004710247367"><img src="img/socials/facebook-logo-button.png" alt="Facebook"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img src="img/socials/telegram-symbol.png" alt="Telegramm"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/id50684213"><img src="img/socials/vk-social-logotype.png" alt="Vkontakte"></a>
+						<a  class="wow bounceInDown" data-wow-delay="0.4s" href="https://www.youtube.com/channel/UCDWgn_0EjQM-qmV8f85mV1g?view_as=subscriber"><img src="img/socials/youtube-symbol.png" alt="YouTube"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -109,6 +110,10 @@
 		<!-- /.container -->
 	</footer>
 
+	<script  src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 </body>
 </html>
